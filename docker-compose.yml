@@ -27,6 +27,3 @@ services:
           MONGO_INITDB_DATABASE: studium
           MONGO_INITDB_ROOT_USERNAME: studium
           MONGO_INITDB_ROOT_PASSWORD: studium
-      volumes:
-          - ./data/mongo/db:/data/db
-          - ./data/mongo/init.d:/docker-entrypoint-initdb.d:ro
