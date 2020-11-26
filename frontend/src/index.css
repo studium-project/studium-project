@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* background: black; */
+    /* background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGyhZW5O1hmYwK-unWW4h8rAO2oyco7P4L2_8YzYwTlp4ow5Z5&s); */
+}
+
+code {
+    font-family: monospace;
+    font-size: 87.5%;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 3px;
+    white-space: pre;
+    display: inline-block;
+}
+
+#root > div > .container {
+    background: white;
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        background-color: white;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer-copyright {
+        padding: 10px 0 30px;
+    }
+}
+
+/* .ui.dropdown.selected,
+.ui.dropdown .menu .selected.item {
+    background: none;
+}
+
+.ui.dropdown .menu .active.item {
+    font-weight: normal;
+}
+
+.ui.dropdown .menu > .item:hover {
+    background: rgba(0, 0, 0, 0.05) !important;
+} */
+
+/* a.ui.basic.label:hover {
+    color: #777;
+} */
+
+.ui.segment.active.tab > p {
+    margin-bottom: 0;
+}
+
+.ui.tabular.menu .item {
+    font-size: 13px;
+}
+.ui.secondary.menu .item {
+    font-size: 13px;
+    font-style: italic;
+}
+
+::selection {
+    background: #706cdc;
+    color: white;
+}
+
+.ui.dropdown.locale .menu .item {
+    padding: 0.4742rem 1rem !important;
+    font-size: 13px;
+}
+.ui.dropdown.profile .menu .item {
+    padding: 0.4742rem 1rem !important;
+    font-size: 13px;
+    /* font-style: italic; */
+    /* font-weight: bold; */
+}
+
+a.dark_a {
+    color: #999999;
+}
+a.dark_a:hover {
+    color: #646464;
+}
+
+td {
+    position: relative;
+}
+
+td > i.flag:not(.icon):before {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    position: absolute;
+}
+
+.ui.input > input[type='password'] {
+    /* letter-spacing: -4px; */
+    -webkit-text-security: circle !important;
+}
+
+
+.new-font {
+    font-family: 'Ubuntu Mono';
+    font-size: 14px !important;
+}

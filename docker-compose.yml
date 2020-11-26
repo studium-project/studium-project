@@ -1,0 +1,32 @@
+version: "3.3"
+services:
+  front:
+    container_name: studium-front
+    image: node:14
+    volumes:
+      - ./frontend:/app
+    entrypoint:
+      - /app/entry.sh
+    ports:
+      - 8080:3000
+  api:
+    container_name: studium-api
+    image: node:14
+    volumes:
+      - ./api:/app
+    entrypoint:
+      - /app/entry.sh
+    ports:
+      - 8081:8080
+    links:
+        - 'db:db'
+  db:
+      image: mongo
+      container_name: studium-db
+      environment:
+          MONGO_INITDB_DATABASE: studium
+          MONGO_INITDB_ROOT_USERNAME: studium
+          MONGO_INITDB_ROOT_PASSWORD: studium
+      volumes:
+          - ./data/mongo/db:/data/db
+          - ./data/mongo/init.d:/docker-entrypoint-initdb.d:ro

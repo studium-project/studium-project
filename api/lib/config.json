@@ -1,0 +1,6 @@
+{
+    "PORT": 8080,
+    "SALT": "f91b323721c53bfb69e73d15cfbd3d87",
+    "JWT_SECRET": "01732fa3213ab5ac543fbd70f2fec313",
+    "MONGO_URL": "mongodb://studium:studium@studium-db:27017"
+}
